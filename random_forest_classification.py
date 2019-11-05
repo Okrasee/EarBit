@@ -142,8 +142,9 @@ while True:
          y_predict = classifier.predict(test[params])
          # y_pred is the last element in the outcome list
          y_pred = y_predict[len(y_predict) - 1]
-         if (y_pred == 0): msg = "The user is drinking"
-         elif (y_pred == 1): msg = "The user is eating"
+         if (y_pred == 0): msg = "The user is chewing"
+         elif (y_pred == 1): msg = "The user is walking"
+         elif (y_pred == 2): msg = "The user is stationary"
          else: msg = "The user is talking"
          row = index_lst[0]
          index_lst.pop(0)
