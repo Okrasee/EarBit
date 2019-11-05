@@ -11,6 +11,9 @@ A 5-second chunk of data is retrieved every second. The machine learning model w
 A `Random Forest Classifier` is trained based on 17 features which characterize jaw movement when chewing. Except the camera and position features, they are essentially 5 features computed for each axes of the gyroscopes placed on the ear and back. There are four possible activities: chewing, drinking, talking and stationary. In this research project, we consider chewing as an indication of eating. 
 ```
 classifier = RandomForestClassifier(n_estimators = 100, max_depth = 5, min_samples_split = 15, max_features = 5, min_samples_leaf = 7, oob_score = True, n_jobs = -1, random_state = 1)
+classifier.fit(X_train, y_train)
+y_predict = classifier.predict(X_test)
+accuracy_score(y_test, y_predict)
 ```
 The hyperparameters are optimized through the implementation of a `gridSearchCV classifier`. 
 ```
