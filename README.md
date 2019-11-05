@@ -2,7 +2,7 @@
 ‘EarBit’ is an experimental wearable system that automatically monitors users’ eating activities. Within the system, the head-mounted proximity sensor collects data from a number of sensing modalities and send the data to a mobile application via Bluetooth. The mobile app then exchanges the raw data and outputs of a machine learning model with a server.
 
 ## Pipeline
-![alt text](https://github.com/Okrasee/EarBit/blob/master/https://github.com/Okrasee/EarBit/blob/master/visualize_pipeline.png)
+![alt text](https://github.com/Okrasee/EarBit/blob/master/visualize_pipeline.png)
 
 ## Data Processing
 A 5-second chunk of data is retrieved every second. The machine learning model will then make a prediction on the average. 
