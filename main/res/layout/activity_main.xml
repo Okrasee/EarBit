@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg"
+    tools:context="com.example.android.btdata.MainActivity">
+
+    <ScrollView
+        android:layout_marginTop="25sp"
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+        <TextView
+            android:paddingBottom="20sp"
+            android:paddingLeft="30dp"
+            android:id="@+id/messages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_gravity="bottom"
+            android:textSize = "16sp"
+            android:textColor="@android:color/background_light"/>
+
+    </ScrollView>
+    <TextView
+        android:paddingTop="25sp"
+        android:paddingLeft="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scrollview"
+        android:id="@+id/title"
+        android:textSize = "24sp"
+        android:text = "OUTCOME"/>
+    <TextView
+        android:paddingLeft="30sp"
+        android:paddingTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:id="@+id/receive"
+        android:textSize = "24sp"/>
+
+
+</RelativeLayout>
