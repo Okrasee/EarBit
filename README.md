@@ -5,7 +5,7 @@
 ![alt text](https://github.com/Okrasee/EarBit/blob/master/pipeline.png)
 
 ## Data Processing
-A 5-second chunk of data is retrieved every second. The machine learning model would then make a prediction on the average. 
+A 5-second chunk of data is retrieved every second. The machine learning model will then make a prediction on the average. 
 
 ## Machine Learning Model
 A `Random Forest Classifier` is trained based on 17 features which characterize jaw movement when chewing. Except the camera and position features, they are essentially 5 features computed for each axes of the gyroscopes placed on the ear and back. There are four possible activities: chewing, drinking, talking and stationary. In this research project, we consider chewing as an indication of eating. 
